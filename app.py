@@ -63,6 +63,11 @@ def base():
     return render_template("base.html")
 
 
+@app.route("/consultation")
+def consultation():
+    return render_template("consultation.html")
+
+
 @app.route("/service")
 def service():
     context = [
