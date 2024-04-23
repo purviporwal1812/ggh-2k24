@@ -1,0 +1,95 @@
+{% extends 'base.html' %} {% block base %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/style3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/purviporwal1812/def/blob/main/templates/consultation.html"
+              >Consult A Doctor</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-8">
+        <div>
+          <img class="img-fluid" src="static\poster.jpg" />
+        </div>
+        >
+      </div>
+      <div class="col-sm-4">
+        <div class="hero-content">
+          <h2>Take control of your mental health</h2>
+          <p>
+            Mental health detector can help you understand your emotions and
+            provide guidance for a healthier mind.
+          </p>
+          <a href="{{ url_for('service') }}" class="cta-btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Easy to Use</h3>
+      <p>
+        It is designed to be user-friendly, making it accessible for everyone.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Instant Results</h3>
+      <p>
+        Receive instant feedback on your mental health status, allowing you to
+        take action immediately.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Anonymous</h3>
+      <p>
+        Your privacy is important to us. Our detector works anonymously to
+        ensure your data is secure.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made By <a href="https://github.com/purviporwal1812">Purvi Porwal</a></p>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
+{% endblock base %}

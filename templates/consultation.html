@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style4.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Consultation with Doctors</h1>
+      <p>
+        We understand that mental health is important. Please consult with our
+        doctors for personalized assistance and guidance.
+      </p>
+      <p>
+        Our team of experienced professionals is here to help you with any
+        concerns you may have.
+      </p>
+      <p>Please find below the list of our doctors:</p>
+      <div class="container mt-5">
+        <h1 class="mb-4">Schedule a Meeting with a Doctor</h1>
+        <form id="schedule-form">
+          <div class="form-group">
+            <label for="doctor-select">Select a Doctor:</label>
+            <select class="form-control" id="doctor-select" required>
+              <option value="">Select a doctor...</option>
+              <option value="Dr. John Smith">
+                Dr. John Smith - Psychiatrist
+              </option>
+              <option value="Dr. Emily Johnson">
+                Dr. Emily Johnson - Psychologist
+              </option>
+              <option value="Dr. Michael Williams">
+                Dr. Michael Williams - Therapist
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name-input">Your Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name-input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email-input">Your Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email-input"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Schedule Meeting
+          </button>
+        </form>
+      </div>
+
+      <p>Please contact us to schedule an appointment.</p>
+      <p>Thank you for reaching out to us. We look forward to assisting you.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* Example CSS rule for input fields */
+.inputs {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width */
+  font-size: 16px;
+}
+
+/* Example CSS rule for dropdowns */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Example CSS rule for labels */
+label {
+  display: block; /* Ensure labels are displayed as block elements for proper spacing */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Example CSS rule for submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Example CSS rule for form container */
+.wrapper {
+  max-width: 600px; /* Adjust maximum width of form container */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
